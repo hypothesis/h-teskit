@@ -48,6 +48,9 @@ parallel = true
 source = ["h_testkit", "tests/unit"]
 omit = [
     "*/h_testkit/__main__.py",
+    "*/h_testkit/__init__.py",
+    "*/h_testkit/factoryboy.py",
+    "*/h_testkit/pytest_plugin.py",
 ]
 
 [tool.coverage.paths]
@@ -127,6 +130,8 @@ disable = [
 
     # Issues to disable this for false positives, disabling it globally in the meantime https://github.com/PyCQA/pylint/issues/214
     "duplicate-code",
+
+    "import-outside-toplevel",
 ]
 
 good-names = [
@@ -141,3 +146,13 @@ score = "no"
 [tool.hdev]
 project_name = "h-testkit"
 project_type = "library"
+
+[project]
+name = "h-testkit"
+dynamic = ["description", "version", "urls", "requires-python", "readme", "dependencies"]
+classifiers = [
+    "Framework :: Pytest",
+]
+
+[project.entry-points.pytest11]
+myproject = "h_testkit.pytest_plugin"

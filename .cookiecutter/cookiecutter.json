@@ -2,7 +2,7 @@
   "template": "https://github.com/hypothesis/cookiecutters",
   "checkout": null,
   "directory": "pypackage",
-  "ignore": [],
+  "ignore": ["src/h_testkit/core.py", "tests/unit/h_testkit/core_test.py"],
   "extra_context": {
     "name": "h-testkit",
     "package_name": "h_testkit",
