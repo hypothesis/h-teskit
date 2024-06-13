@@ -1,1 +1,3 @@
-{dev,tests,functests,lint}: sqlalchemy>2
+{dev,typecheck,tests,functests,lint}: sqlalchemy>2
+typecheck: factory-boy
+typecheck: pytest
