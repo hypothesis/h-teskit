@@ -161,11 +161,6 @@ module= [
 ]
 ignore_errors = true
 
-
-[tool.hdev]
-project_name = "h-testkit"
-project_type = "library"
-
 [project]
 name = "h-testkit"
 dynamic = ["description", "version", "urls", "requires-python", "readme", "dependencies"]
