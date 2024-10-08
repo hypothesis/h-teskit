@@ -23,7 +23,6 @@
     "__github_url": "https://github.com/hypothesis/h-testkit",
     "__pypi_url": "https://pypi.org/project/h-testkit",
     "__copyright_year": "2024",
-    "__hdev_project_type": "library",
     "__parallel_unit_tests": false,
     "__format_runner_type": "ubuntu-latest",
     "__lint_runner_type": "ubuntu-latest",
